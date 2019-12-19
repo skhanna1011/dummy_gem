@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "dummy_gem"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+# Connects to db
+# db_config = YAML.load_file('config/database.yml')['development']
+# ActiveRecord::Base.establish_connection(db_config)
+# ActiveRecord::Base.logger = Logger.new(STDOUT)
+# puts "Connected to " + ActiveRecord::Base.connection.current_database
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+require "pry"
+Pry.start
+
+# require "irb"
+# IRB.start(__FILE__)
+
+#Close connection to db on exit
+# at_exit do
+#   ActiveRecord::Base.remove_connection
+#   puts 'connection removed'
+# end
